@@ -2,9 +2,9 @@
   "name": "time-weather",
   "version": "1.0.0",
   "description": "Return time and weather for given location array",
-  "main": "index.js",
+  "main": "weather.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register './tests.ts'"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,18 @@
   "bugs": {
     "url": "https://github.com/cuzox/time-weather/issues"
   },
-  "homepage": "https://github.com/cuzox/time-weather#readme"
+  "homepage": "https://github.com/cuzox/time-weather#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2",
+    "sinon": "^9.0.2",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  }
 }
