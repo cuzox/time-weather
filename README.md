@@ -1,15 +1,18 @@
 # Time Weather
-Return the time and weather for given comma separated location array
+Return the time and weather for given comma separated locations
 
-# How to run
-```npm run weather```
-
-# Arguments
-Can be a comma separated string, or straight comma separated args
-
-```npm run weather new york, great britain, "paris, london"```
-
-# Run the tests
+# Test
 ```npm run test```
 
-I fogot to attach the API key to the application, I just sent it over email!
+# Run
+The input can be comma separated args or strings
+
+```npm run weather new york, new delhi, "paris, london"```
+
+## Output
+```
+There's clear sky in New York (US), it's 5:55 PM and the temperature is 63.7 °F
+There's haze in New Delhi (IN), it's 3:25 AM and the temperature is 80.6 °F
+There's scattered clouds in Paris (FR), it's 11:55 PM and the temperature is 51.4 °F
+There's scattered clouds in London (GB), it's 10:55 PM and the temperature is 45.72 °F
+```
