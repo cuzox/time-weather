@@ -16,5 +16,16 @@ export default class App {
   }
 
   static async run(locations: string[]){
+    for (const location of locations){
+      try {
+        const output = await App.gather(location)
+        console.log(output)
+      } catch({ response: { status } }){
+        if(status === 404)
+          console.log(`"${App.locationDisplay(location)}" could not be found`)
+        else
+          console.log(`There was an unexpected problem fetching information for "${App.locationDisplay(location)}"`)
+      }
+    }
   }
 }

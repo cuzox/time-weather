@@ -29,8 +29,16 @@ describe('App', ()=>{
     expect(expectedResult).to.equal(actualResult)
   })
 
-  it('#run() should gather data for each location', () => {
-    expect('test').to.equal('test')
+  it('#run() should gather data for each location', async () => {
+    const expectedGatherings = 5
+
+    const stub = sinon.stub().returns(Promise.resolve(''))
+    sinon.replace(App, 'gather', stub)
+
+    await App.run(['1', '2', '3', '4', '5'])
+
+    const actualGatherings = stub.callCount
+    expect(actualGatherings).to.equal(expectedGatherings)
   })
 })
 
