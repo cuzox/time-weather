@@ -1,0 +1,19 @@
+{
+  "name": "time-weather",
+  "version": "1.0.0",
+  "description": "Return time and weather for given location array",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cuzox/time-weather.git"
+  },
+  "author": "cuzox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuzox/time-weather/issues"
+  },
+  "homepage": "https://github.com/cuzox/time-weather#readme"
+}
