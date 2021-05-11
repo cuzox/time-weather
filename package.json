@@ -19,7 +19,7 @@
   "homepage": "https://github.com/cuzox/time-weather#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "luxon": "^1.24.1"
   },
   "devDependencies": {
